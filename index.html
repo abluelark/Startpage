@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel='stylesheet' type='text/css' href='css/homepage.css'/>
+		<link rel='stylesheet' type='text/css' href='css/fonts.css'/>
+		<script type='text/javascript' src='js/fonticon.js'></script>
+	</head>
+	
+	<body>
+		<img src="images/logo.png" />
+		<div class='favorites'>
+			<div class='list fav-dev'>
+				<p>Linux</p>
+				<ul>
+					<li><a href='http://www.cupoflinux.com/SBB/index.php'>Cup of Linux</a></li>
+					<li><a href='https://manjaro.github.io'>Manjaro</a></li>
+					<li><a href='http://reddit.com/r/unixporn'>/r/unixporn</a></li>
+					<li><a href='http://pomf.cat/'>pomf.cat</a></li>
+					<li><a href='http://dotshare.it || dotshare.it'>dotshare.it</a></li>
+					<li><a href='https://github.com'>GitHub</a></li>
+					<li><a href='https://rogerdudler.github.io/git-guide/'>~/Git-Guide</a></li>
+					<li><a href='http://mynt.uhnomoli.com'>mynt</a></li>
+					<li><a href='https://waa.ai/k6hf'>term</a></li>
+				</ul>
+			</div>
+			
+			<div class='list fav-ent'>
+				<p>Social</p>
+				<ul>
+					<li><a href='http://www.twitter.com'>Twitter</a></li>
+					<li><a href='https://www.plus.google.com'>Google+</a></li>
+					<li><a href='http://store.steampowered.com/'>Steam</a></li>
+					<li><a href='http://www.reddit.com'>Reddit</a></li>
+					<li><a href='http://www.youtube.com'>YouTube</a></li>
+				</ul>
+			</div>
+
+			<div class='list fav-shop'>
+				<p>Miscellaneous</p>
+				<ul>
+					<li><a href='http://192.168.0.1 '>Modem Config</a></li>
+					<li><a href="http://localhost:32400/web/index.html">Plex</a></li>
+					<li><a href='https://www.wellsfargo.com '>Wells Fargo</a></li>
+					<li><a href='https://goo.gl/IeBsbQ '>Dev Payments</a></li>
+					<li><a href='https://www.privateinternetaccess.com/pages/whats-my-ip/'>PIA Check</a></li>
+					<li><a href='https://www.kat.cr'>Kickass</a></li>
+				</ul>
+			</div>
+
+			<div class='list fav-learn'>
+				<p>Work</p>
+				<ul>
+					<li><a href='https://projectmusiced.xyz'>~/Project/MusicEd</a></li>
+					<li><a href='https://inbox.google.com'>Inbox</a></li>
+					<li><a href='https://goo.gl/YOYI8u '>mySUU</a></li>
+					<li><a href='http://drive.google.com'>Drive</a></li>
+					<li><a href='http://keep.google.com'>Keep</a></li>
+                                        <li><a href='https://play.google.com/music/listen?u=0#/now'>Play Music</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<form method="get" action="https://duckduckgo.com/?q={searchTerms}"> 
+			<input class='search' name='q' type='text' placeholder='DuckDuckGo'/> 
+			<button class='go' type='submit'><i class='icon icon-search'></i></button>
+		</form>
+
+		<form method="get" action="https://aur.archlinux.org/packages/"> 
+			<input class='search' name='K' type='text' placeholder='AUR'/> 
+			<button class='go' type='submit'><i class='icon icon-search'></i></button>
+		</form>
+
+		<form method="get" action="https://www.archlinux.org/packages/"> 
+			<input class='search' name='q' type='text' placeholder='Arch Packages'/> 
+			<button class='go' type='submit'><i class='icon icon-search'></i></button>
+		</form>
+
+		<div id="feed">
+			<h3 id="title"></h3>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+	    google.load("feeds", "1");
+
+	    function initialize() {
+	      var feed = new google.feeds.Feed("https://news.google.com?output=rss");
+	      feed.load(function(result) {
+	        if (!result.error) {
+	          var container = document.getElementById("feed");
+	          var entry = result.feed.entries[0];
+	          
+	          container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;
+
+
+	        }
+	      });
+	    }
+	    google.setOnLoadCallback(initialize);
+
+    </script>
+
+</html>
