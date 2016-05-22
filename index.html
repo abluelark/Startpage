@@ -8,7 +8,7 @@
 	</head>
 	
 	<body>
-		<img src="images/logo.png" />
+		<img src="images/icon.png" />
 		<div class='favorites'>
 			<div class='list fav-dev'>
 				<p>Linux</p>
@@ -19,9 +19,10 @@
 					<li><a href='http://pomf.cat/'>pomf.cat</a></li>
 					<li><a href='http://dotshare.it || dotshare.it'>dotshare.it</a></li>
 					<li><a href='https://github.com'>GitHub</a></li>
-					<li><a href='https://rogerdudler.github.io/git-guide/'>~/Git-Guide</a></li>
+					<li><a href='https://rogerdudler.github.io/git-guide/'>Git-Guide</a></li>
 					<li><a href='http://mynt.uhnomoli.com'>mynt</a></li>
 					<li><a href='https://waa.ai/k6hf'>term</a></li>
+				</ul>
 				</ul>
 			</div>
 			
@@ -76,31 +77,8 @@
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
 
-		<div id="feed">
-			<h3 id="title"></h3>
-		</div>
 		
 	</body>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-
-	    google.load("feeds", "1");
-
-	    function initialize() {
-	      var feed = new google.feeds.Feed("https://news.google.com?output=rss");
-	      feed.load(function(result) {
-	        if (!result.error) {
-	          var container = document.getElementById("feed");
-	          var entry = result.feed.entries[0];
-	          
-	          container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;
-
-
-	        }
-	      });
-	    }
-	    google.setOnLoadCallback(initialize);
-
-    </script>
-
 </html>
+
+
