@@ -88,14 +88,14 @@
 
 	   <!--google.load("feeds", "1");-- > 
 
-	    function initialize() {
-	      var feed = new google.feeds.Feed("https://news.google.com?output=rss");
-	      feed.load(function(result) {
-	        if (!result.error) {
-	          var container = document.getElementById("feed");
-	          var entry = result.feed.entries[0];
+	    <!--function initialize() {-- >
+	      <!--var feed = new google.feeds.Feed("https://news.google.com?output=rss");-- >
+	      <!--feed.load(function(result) {-- >
+	       <!-- if (!result.error) {-- >
+	          <!--var container = document.getElementById("feed");-- >
+	         <!-- var entry = result.feed.entries[0];-- >
 	          
-	          container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;
+	          <!--container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;-- >
 
 
 	        }
