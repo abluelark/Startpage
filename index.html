@@ -28,7 +28,7 @@
 				<p>Social</p>
 				<ul>
 					<li><a href='http://www.twitter.com'>Twitter</a></li>
-					<li><a href='https://instagram.com'>Instagram</a></li>
+					<li><a href='instagram.com'>Instagram</a></li>
 					<li><a href='https://www.plus.google.com'>Google+</a></li>
 					<li><a href='http://store.steampowered.com/'>Steam</a></li>
 					<li><a href='http://www.reddit.com'>Reddit</a></li>
@@ -86,16 +86,16 @@
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
 
-	    google.load("feeds", "1");
+	   <!--google.load("feeds", "1");-- > 
 
-	    function initialize() {
-	      var feed = new google.feeds.Feed("https://news.google.com?output=rss");
-	      feed.load(function(result) {
-	        if (!result.error) {
-	          var container = document.getElementById("feed");
-	          var entry = result.feed.entries[0];
+	    <!--function initialize() {-- >
+	      <!--var feed = new google.feeds.Feed("https://news.google.com?output=rss");-- >
+	      <!--feed.load(function(result) {-- >
+	       <!-- if (!result.error) {-- >
+	          <!--var container = document.getElementById("feed");-- >
+	         <!-- var entry = result.feed.entries[0];-- >
 	          
-	          container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;
+	          <!--container.innerHTML = "<h3>" + entry.title + "</h3><br>" + entry.content;-- >
 
 
 	        }
