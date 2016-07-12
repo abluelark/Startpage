@@ -63,7 +63,7 @@
 			</div>
 		</div>
 		
-		<form method="get" action="https://duckduckgo.com/?q={searchTerms}"> 
+		<form method="get" action="https://duckduckgo.com/?q={searchTerms}"  name=”ducksearch”> 
 			<input class='search' name='q' type='text' placeholder='DuckDuckGo'/> 
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
@@ -77,7 +77,9 @@
 			<input class='search' name='q' type='text' placeholder='Arch Packages'/> 
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
-
+                
+                <body onload=”document.ducksearch.q.focus()”>
+		
 		<div id="feed">
 			<h3 id="title"></h3>
 		</div>
