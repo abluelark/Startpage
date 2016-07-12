@@ -63,7 +63,7 @@
 			</div>
 		</div>
 		
-		<form method="get" action="https://duckduckgo.com/?q={searchTerms}"> 
+		<form method="get" action="https://duckduckgo.com/?q={searchTerms}" name=”ducksearch”> 
 			<input class='search' name='q' type='text' placeholder='DuckDuckGo'/> 
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
@@ -72,6 +72,8 @@
 			<input class='search' name='K' type='text' placeholder='AUR'/> 
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
+
+              <body onload=”document.ducksearch.q.focus()”>
 
 		<form method="get" action="https://www.archlinux.org/packages/"> 
 			<input class='search' name='q' type='text' placeholder='Arch Packages'/> 
