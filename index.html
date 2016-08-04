@@ -28,7 +28,7 @@
 				<p>Social</p>
 				<ul>
 					<li><a href='http://www.twitter.com'>Twitter</a></li>
-					<li><a href='instagram.com'>Instagram</a></li>
+					<li><a href='http://instagram.com'>Instagram</a></li>
 					<li><a href='https://www.plus.google.com'>Google+</a></li>
 					<li><a href='http://store.steampowered.com/'>Steam</a></li>
 					<li><a href='http://www.reddit.com'>Reddit</a></li>
@@ -44,9 +44,9 @@
 					<li><a href='https://www.wellsfargo.com '>Wells Fargo</a></li>
 					<li><a href='https://goo.gl/IeBsbQ '>Dev Payments</a></li>
 					<li><a href='http://pomf.cat/'>pomf.cat</a></li>
-					<li><a href='http://dotshare.it || dotshare.it'>dotshare.it</a></li>
+					<li><a href='http://dotshare.it'>dotshare.it</a></li>
 					<li><a href='https://www.privateinternetaccess.com/pages/whats-my-ip/'>PIA Check</a></li>
-					<li><a href='https://www.kat.cr'>Kickass</a></li>
+					<li><a href='https://www.thepiratebay.se'>magnets</a></li>
 				</ul>
 			</div>
 
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 		
-		<form method="get" action="https://duckduckgo.com/?q={searchTerms}"  name=”ducksearch”> 
+		<form method="get" action="https://duckduckgo.com/?q={searchTerms}" form id="ducksearch" > 
 			<input class='search' name='q' type='text' placeholder='DuckDuckGo'/> 
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
@@ -78,7 +78,11 @@
 			<button class='go' type='submit'><i class='icon icon-search'></i></button>
 		</form>
                 
-                <body onload=”document.ducksearch.q.focus()”>
+                <script type="text/javascript">
+			$(document).ready(function(){
+			document.homeform.input.focus();
+		});
+</script>
 		
 		<div id="feed">
 			<h3 id="title"></h3>
