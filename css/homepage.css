@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=VT323:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 * {
     margin: 0;
     padding: 0
@@ -7,9 +7,9 @@
     opacity: 0.3
 }
 body {
-    background: #1B1916;
+    background: #222222;
     padding-top: 5%;
-    font-size: 11px;
+    font-size: 10px;
     width: 88%;
     margin: auto;
     -webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@ p,
 li,
 a {
     color: #D0D1CC;
-    font-family: VT323, Consolas;
+    font-family: Roboto, Consolas;
     font-weight: 300;
     letter-spacing: 2px
 }
@@ -99,17 +99,17 @@ img {
 }
 .search:focus {
     outline: none;
-    border: 1px solid #D0D1CC
+    border: 1px solid #9F9EC9
 }
 .go {
     height: 27px;
     width: 40px;
     background: #222;
     color: #D0D1CC;
-    border: 1px solid #D0D1CC
+    border: 1px solid #9F9EC9
 }
 .go:hover {
-    background: #D0D1CC;
+    background: #9F9EC9;
     color: #222;
     cursor: pointer
 }
