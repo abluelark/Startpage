@@ -7,9 +7,9 @@
     opacity: 0.3
 }
 body {
-    background: #222222;
+    background: #111111;
     padding-top: 5%;
-    font-size: 10px;
+    font-size: 5px;
     width: 88%;
     margin: auto;
     -webkit-font-smoothing: antialiased;
