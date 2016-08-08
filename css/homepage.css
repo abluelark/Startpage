@@ -62,7 +62,7 @@ a:hover {
     display: inline-block;
     width: 22%;
     margin: 10px 10px;
-    border: 1px solid #D0D1CC
+    border: 0px solid #D0D1CC
 }
 form {
     width: 90%;
@@ -95,7 +95,7 @@ img {
     border: 0px solid #444
 }
 .search:hover {
-    border: 1px solid #666
+    border: 0px solid #666
 }
 .search:focus {
     outline: none;
@@ -106,7 +106,7 @@ img {
     width: 40px;
     background: #222;
     color: #D0D1CC;
-    border: 1px solid #9F9EC9
+    border: 0px solid #9F9EC9
 }
 .go:hover {
     background: #9F9EC9;
