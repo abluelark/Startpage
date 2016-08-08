@@ -104,12 +104,12 @@ img {
 .go {
     height: 27px;
     width: 40px;
-    background: #222;
+    background: #1B2129;
     color: #D0D1CC;
     border: 0px solid #9F9EC9
 }
 .go:hover {
-    background: #9F9EC9;
+    background: #c7d3c9;
     color: #222;
     cursor: pointer
 }
