@@ -8,8 +8,8 @@
 }
 body {
     background: #111111;
-    padding-top: 5%;
-    font-size: 10px;
+    padding-top: 15%;
+    font-size: 12px;
     width: 88%;
     margin: auto;
     -webkit-font-smoothing: antialiased;
@@ -93,6 +93,8 @@ img {
     background: #111111;
     color: #D0D1CC;
     border: 0px solid #444
+    font-family: Abel, sans-serif;
+    font-weight: 400;
 }
 .search:hover {
     border: 0px solid #666
@@ -104,7 +106,7 @@ img {
 .go {
     height: 27px;
     width: 40px;
-    background: #1B2129;
+    background: #181818;
     color: #D0D1CC;
     border: 0px solid #9F9EC9
 }
