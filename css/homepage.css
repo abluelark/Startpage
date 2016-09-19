@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400|Consolas:400);
 * {
     margin: 0;
     padding: 0
@@ -7,7 +7,7 @@
     opacity: 0.3
 }
 body {
-    background: #1B2129;
+    background: #111111;
     padding-top: 5%;
     font-size: 10px;
     width: 88%;
@@ -22,8 +22,8 @@ p,
 li,
 a {
     color: #D0D1CC;
-    font-family: Roboto, Consolas;
-    font-weight: 300;
+    font-family: Consolas;
+    font-weight: 400;
     letter-spacing: 2px
 }
 .favorites {
@@ -91,7 +91,7 @@ img {
     margin-right: -4px;
     padding: 5px;
     background: #222;
-    color: #D0D1CC;
+    color: #111111;
     border: 1px solid #444
 }
 .search:hover {
