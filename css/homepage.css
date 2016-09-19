@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Muli:400);
 * {
     margin: 0;
     padding: 0
@@ -21,8 +21,8 @@ body {
 p,
 li,
 a {
-    color: #111111;
-    font-family: Open Sans, sans-serif;
+    color: #F1F1E9;
+    font-family: Muli sans-serif;
     font-weight: 400;
     letter-spacing: 2px
 }
