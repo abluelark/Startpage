@@ -22,14 +22,14 @@ p,
 li,
 a {
     color: #F1F1E9;
-    font-family: Muli sans-serif;
+    font-family: Muli, sans-serif;
     font-weight: 400;
     letter-spacing: 2px
 }
 .favorites {
     width: 90%;
     margin: 10px auto 40px auto;
-    text-align: center
+    text-align: left
 }
 .favorites p {
     border-bottom: 1px solid #D0D1CC;
